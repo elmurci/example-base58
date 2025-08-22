@@ -17,14 +17,6 @@ pub enum Commands {
     Base58ToHex { key: String, key_type: String },
 }
 
-// {
-//    "key_type" : "ed25519",
-//    "public_key" : "nHUTxEuGtZYDwwvV7HfrAqBG5ttPZyAA2NiMnMRjz4bmgEhidayM",
-//    "revoked" : false,
-//    "secret_key" : "paPEQYWSi25pAakHs2yRAj7fSJovqoVMiN562MMNoe6U6HthUvM",
-//    "token_sequence" : 0
-// }
-
 #[tokio::main]
 async fn main() -> Result<()> {
     let cli = Cli::parse();
